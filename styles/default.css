@@ -26,21 +26,19 @@ ul {
 li{
 }
 article {
+	text-align:center;
+	width: 50%; 
+	margin: 0 auto;
+	padding:20px;
 }
 video {
 	background-color:black;
-	padding: 15px;
 	border-style:solid;
-	box-shadow:0px 0px 10px 10px black;
-	margin: 100px;
 	border-radius: 5px;
-	left: 70%;
 }
 #EDBD {
-	float:left;
 }
 br{
-	clear:both;
 }
 img{
 	padding:100px;
@@ -48,6 +46,7 @@ img{
 	border-radius: 10px;
 }
 .topBar{
+	z-index:10;
 	height:100px;
 	width:100%;
 	background-color: #def;
@@ -83,7 +82,8 @@ img{
     margin-left: 50px
 }
 .content{
-	margin-top:0;
+	position:relative;
+	margin-top:100px;
 	margin-left:0;
 	transition: 0.4s;
 }
