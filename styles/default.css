@@ -1,11 +1,13 @@
 h1{
+	font-family: "Lato", sans-serif;
 	margin:0;
 	margin-left:20%;
 	text-align: center;
-	background-color: beige;
 	padding:10px;
+	line-height:70px;
 }
 body {
+	font-family: "Lato", sans-serif;
 	margin:0;
 	background-color: lightgrey;
 	background-image: url("../images/main.jpg");
@@ -17,10 +19,12 @@ p {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	font-size:50px;
 	color: lawngreen;
-	padding:25px;	
-	background-color: black;
 	margin:0;
 	}
+ul {
+}
+li{
+}
 article {
 }
 video {
@@ -43,14 +47,52 @@ img{
 	background-color: lightgreen;
 	border-radius: 10px;
 }
-.sidebar {
-	left: 0;
+.topBar{
+	height:100px;
+	width:100%;
+	background-color: #def;
+	position:fixed;
 	top:0;
+}
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1; 
+    top: 100px;
+    left: 0;
+	overflow-x: hidden;
+    background-color: #87CEFA;
+    padding-top: 60px;
+    transition: 0.4s;
+}
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.4s;
 	position:absolute;
-	width:20%;
-	box-shadow:0px 0px 100px 5px black;
+	}
+.sidebarExit{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px
 }
 .content{
 	margin-top:0;
-	margin-left:20%;
+	margin-left:0;
+	transition: 0.4s;
+}
+#hamburger{
+	position:fixed;
+	margin: 20px;
+	line-height:50px;
+	text-align:center;
+	font-size:40px;cursor:pointer;
+	width:50px;
+	height: 50px;
 }
